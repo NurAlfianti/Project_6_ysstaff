@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 17, 2022 1:26:04 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.TbAdmin" table="tb_admin" catalog="datastaff" optimistic-lock="version">
+        <id name="adminId" type="java.lang.Integer">
+            <column name="admin_id" />
+            <generator class="identity" />
+        </id>
+        <property name="adminNama" type="string">
+            <column name="admin_nama" length="50" not-null="true" />
+        </property>
+        <property name="adminPass" type="string">
+            <column name="admin_pass" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

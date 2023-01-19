@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 17, 2022 1:26:04 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.TbProfil" table="tb_profil" catalog="datastaff" optimistic-lock="version">
+        <id name="staffId" type="java.lang.Integer">
+            <column name="staff_id" />
+            <generator class="identity" />
+        </id>
+        <property name="nama" type="string">
+            <column name="nama" length="50" not-null="true" />
+        </property>
+        <property name="staffDivisi" type="string">
+            <column name="staff_divisi" length="25" not-null="true" />
+        </property>
+        <property name="jenisKelamin" type="string">
+            <column name="jenis_kelamin" length="10" not-null="true" />
+        </property>
+        <property name="tanggalLahir" type="string">
+            <column name="tanggal_lahir" length="10" not-null="true" />
+        </property>
+        <property name="tanggalMasuk" type="string">
+            <column name="tanggal_masuk" length="10" not-null="true" />
+        </property>
+        <property name="tanggalKeluar" type="string">
+            <column name="tanggal_keluar" length="10" not-null="true" />
+        </property>
+        <property name="noHp" type="string">
+            <column name="no_hp" length="13" not-null="true" />
+        </property>
+        <property name="alamat" type="string">
+            <column name="alamat" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
